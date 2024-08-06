@@ -25,7 +25,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@session.js/errors": "^1.0.9"
+    "@session.js/errors": "^1.0.10"
   },
   "devDependencies": {
     "tsc-alias": "^1.8.10"
