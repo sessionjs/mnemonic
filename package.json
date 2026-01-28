@@ -1,6 +1,6 @@
 {
 	"name": "@session.js/mnemonic",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Mnemonic/seed phrase utilities for Session messenger.",
 	"homepage": "https://git.hloth.dev/session.js/mnemonic#readme",
 	"bugs": {
@@ -26,7 +26,7 @@
 		"build": "rm -rf dist && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json --resolve-full-paths"
 	},
 	"dependencies": {
-		"@session.js/errors": "^1.0.10"
+		"@session.js/errors": "^1.0.11"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.1",
