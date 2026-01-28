@@ -1,26 +1,28 @@
 {
   "name": "@session.js/mnemonic",
-  "version": "1.0.4",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "description": "Mnemonic/seed phrase utilities for Session messenger.",
+  "version": "1.0.5",
   "author": "Viktor Shchelochkov <hi@hloth.dev> (https://hloth.dev)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sessionjs/mnemonic.git"
+    "url": "git+https://git.hloth.dev/session.js/mnemonic.git"
   },
   "bugs": {
-    "url": "https://github.com/sessionjs/mnemonic/issues"
+    "url": "https://git.hloth.dev/session.js/mnemonic/issues"
   },
-  "homepage": "https://github.com/sessionjs/mnemonic#readme",
-  "description": "Mnemonic/seed phrase utilities for Session messenger.",
-  "type": "module",
+  "homepage": "https://git.hloth.dev/session.js/mnemonic#readme",
+  "license": "MIT",
+  "funding": "https://hloth.dev/donate",
+  "scripts": {
+    "build": "rm -rf dist && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json --resolve-full-paths"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts"
   ],
-  "scripts": {
-    "build": "rm -rf dist && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json --resolve-full-paths"
-  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },

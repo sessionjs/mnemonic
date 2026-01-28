@@ -29,11 +29,11 @@ Install [@session.js/keypair](https://www.npmjs.com/package/@session.js/keypair)
 > Hint: Session IDs are [x25519 aka Curve25519](https://en.wikipedia.org/wiki/Curve25519) public keys prepended with `05`
 
 ```ts
-import { generateSeedHex, getKeypairFromSeed } from '@session.js/keypair'
+import { generateSeedHex, getKeysFromSeed } from '@session.js/keypair'
 import { encode } from '@session.js/mnemonic'
 
 const seedHex = generateSeedHex()
-const keypair = getKeypairFromSeed(seedHex)
+const keypair = getKeysFromSeed(seedHex)
 const mnemonic = encode(seedHex)
 const sessionID = keypair.x25519.publicKey
 
